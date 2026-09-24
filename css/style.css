@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #171313;
+    color: #C0C0C0;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#results, #favorites {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.book-card {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.book-cover {
+    display: block;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.book-title {
+    margin: 0 0 10px;
+}
+
+.book-author, .book-year, .book-editions {
+    margin: 5px 0;
+}
+
+.details-content {
+    display: flex;
+    gap: 20px;
+}
+
+.details-cover {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
+.details-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.details-info button {
+    margin-bottom: 20px;
+}

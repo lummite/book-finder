@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Book search</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <h1>Book finder</h1>
+
+    <form>
+        <input type="text">
+        <button type="submit">Search</button>
+    </form>
+
+    <div id="status"></div>
+
+    <section>
+        <select>
+            <option value="all">All</option>
+            <option value="with-year">With publication year</option>
+        </select>
+
+        <select>
+            <option value="relenace">Relevance</option>
+            <option value="newest">Newest</option>
+            <option value="oldest">Oldest</option>
+            <option value="title">Title A-Z</option>
+        </select>
+    </section>
+
+    <section>
+        <h2>Seacrh results</h2>
+
+        <div id="results"></div>
+    </section>
+
+    <section>
+        <h2>Favorites</h2>
+
+        <div id="favorites"></div>
+    </section>
+
+    <section id="details"></section>
+
+    <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
